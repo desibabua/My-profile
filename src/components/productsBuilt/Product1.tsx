@@ -5,22 +5,20 @@ import {
   Flex,
   Heading,
   Image,
-  ListItem,
   Text,
-  UnorderedList,
   VStack,
   useTheme,
 } from "@chakra-ui/react";
 
-const AboutMeSection: React.FC = () => {
+const Product1: React.FC = () => {
   const theme = useTheme();
 
   return (
-    <Box mt={theme.sizes.sectionMargin} mx="auto" maxW="1200px">
+    <Box mt={theme.sizes.subSectionMargin} mx="auto" maxW="1200px">
       <Flex>
         <VStack align="left" spacing={4} flex="1" fontSize={theme.sizes.l}>
-          <Heading className="section">
-            About Me
+          <Heading fontSize={theme.sizes.subHeading} color={theme.colors.white}>
+            Profile Page
           </Heading>
           <Text>
             Hello! I'm Ayush kumar, an engineer at core who loves creating stuff
@@ -41,21 +39,14 @@ const AboutMeSection: React.FC = () => {
           <Text>
             Here are a few technologies I've been working with recently:
           </Text>
-          <UnorderedList listStyleType="none" className="skills">
-            <ListItem>JavaScript</ListItem>
-            <ListItem>React</ListItem>
-            <ListItem>Node Js</ListItem>
-            <ListItem>React Native</ListItem>
-            <ListItem>Java</ListItem>
-          </UnorderedList>
         </VStack>
 
         <Center flex="1">
-          <Image src="/images/developer.svg" alt="Your Photo" boxSize="300px" />
+          <Image src="/images/profilePage.png" alt="Your Photo" />
         </Center>
       </Flex>
     </Box>
   );
 };
 
-export default AboutMeSection;
+export default Product1;

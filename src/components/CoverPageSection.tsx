@@ -19,7 +19,9 @@ const CoverPageSection: React.FC = () => {
       <Flex>
         <VStack align="left" spacing={4} flex="1">
           <Text color={theme.colors.secondary}>Hi, my name is</Text>
-          <Heading fontSize={theme.sizes.title}>Ayush Kumar.</Heading>
+          <Heading fontSize={theme.sizes.title} color={theme.colors.white}>
+            Ayush Kumar.
+          </Heading>
           <Heading fontSize={theme.sizes.subTitle} color={theme.colors.grey}>
             I build digital experiences.
           </Heading>
@@ -42,7 +44,11 @@ const CoverPageSection: React.FC = () => {
         </VStack>
 
         <Center flex="1">
-          <Image src="/developer.svg" alt="Ayush Kumar" boxSize="300px" />
+          <Image
+            src="/images/developer.svg"
+            alt="Ayush Kumar"
+            boxSize="300px"
+          />
         </Center>
       </Flex>
     </Box>
